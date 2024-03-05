@@ -4,93 +4,97 @@ import { Link } from 'react-router-dom'
 
 function Footer () {
   return (
-    <footer className='w-full py-4 absolute bottom-0 bg-gray-100 flex'>
+    <footer className='w-full py-4 bg-gray-100 flex'>
       <div
-        className='container grid gap-3 px-4 text-sm text-gray-500 grid-cols-2 md:text-base md:px-6 md:grid-cols-4 grid-rows-2 md:grid-rows-1 dark:text-gray-400 grid-flow-row-dense'
+        className='flex flex-col gap-3 text-sm text-gray-500 md:text-base md:px-6 dark:text-gray-400 w-full lg:gap-y-10'
       >
 
-        <div className='hidden md:block'>
-          <p className='font-semibold uppercase tracking-wide mb-2'>About Us</p>
-          <p className='text-sm'>
-            Your one-stop shop for the best products. We are dedicated to providing high-quality items with excellent
-            service.
-          </p>
+        <div className='flex w-full justify-evenly max-w-[20rem] md:max-w-[40rem] lg:max-w-[60rem] mx-auto gap-x-10 lg:gap-x-20'>
+          <div className='hidden md:block'>
+            <p className='font-semibold uppercase tracking-wide mb-2'>About Us</p>
+            <p className='text-sm text-justify'>
+              Your one-stop shop for the best products. We are dedicated to providing high-quality items with excellent
+              service.
+            </p>
+          </div>
+
+          <div className=''>
+            <p className='font-semibold uppercase tracking-wide mb-2'>Contact Us</p>
+            <div className='flex items-center gap-2 text-sm'>
+              <PhoneIcon className='w-4 h-4 flex-shrink-0' />
+              <span>1-800-123-4567</span>
+            </div>
+            <div className='flex items-center gap-2'>
+              <EnvelopeIcon className='w-4 h-4 flex-shrink-0 text-sm' />
+              <Link className='underline' href='#'>
+                info@example.com
+              </Link>
+            </div>
+          </div>
+
+          <div className=''>
+            <p className='font-semibold uppercase tracking-wide mb-2'>Categories</p>
+            <ul className='text-sm grid grid-cols-2 gap-x-5 sm:gap-x-10'>
+              <li>
+                <Link className='hover:underline' href='#'>
+                  Hardware
+                </Link>
+              </li>
+              <li>
+                <Link className='hover:underline' href='#'>
+                  Desktop
+                </Link>
+              </li>
+              <li>
+                <Link className='hover:underline' href='#'>
+                  Laptos
+                </Link>
+              </li>
+              <li>
+                <Link className='hover:underline' href='#'>
+                  Accessories
+                </Link>
+              </li>
+            </ul>
+          </div>
         </div>
 
-        <div className=''>
-          <p className='font-semibold uppercase tracking-wide mb-2'>Contact Us</p>
-          <div className='flex items-center gap-2 text-sm'>
-            <PhoneIcon className='w-4 h-4 flex-shrink-0' />
-            <span>1-800-123-4567</span>
-          </div>
-          <div className='flex items-center gap-2'>
-            <EnvelopeIcon className='w-4 h-4 flex-shrink-0 text-sm' />
-            <Link className='underline' href='#'>
-              info@example.com
+        <div className='flex w-full justify-evenly gap-8 max-w-[20rem] md:max-w-[40rem] mx-auto'>
+          <div
+            className='flex items-center gap-1 md:gap-4 '
+          >
+            <Link
+              className='rounded-lg inline-flex w-8 h-8 items-center justify-center border border-gray-200 bg-white shadow-sm transition-colors hover:bg-gray-100 hover:text-gray-900 dark:border-gray-800 dark:bg-gray-950 dark:hover:bg-gray-950 dark:hover:text-gray-50'
+              to='/'
+            >
+              <FacebookIcon className='w-4 h-4' />
+              <span className='sr-only'>Facebook</span>
+            </Link>
+            <Link
+              className='rounded-lg inline-flex w-8 h-8 items-center justify-center border border-gray-200 bg-white shadow-sm transition-colors hover:bg-gray-100 hover:text-gray-900 dark:border-gray-800 dark:bg-gray-950 dark:hover:bg-gray-950 dark:hover:text-gray-50'
+              to='/'
+            >
+              <InstagramIcon className='w-4 h-4' />
+              <span className='sr-only'>Instagram</span>
+            </Link>
+            <Link
+              className='rounded-lg inline-flex w-8 h-8 items-center justify-center border border-gray-200 bg-white shadow-sm transition-colors hover:bg-gray-100 hover:text-gray-900 dark:border-gray-800 dark:bg-gray-950 dark:hover:bg-gray-950 dark:hover:text-gray-50'
+              to='/'
+            >
+              <TwitterIcon className='w-4 h-4' />
+              <span className='sr-only'>Twitter</span>
+            </Link>
+            <Link
+              className='rounded-lg inline-flex w-8 h-8 items-center justify-center border  border-gray-200 bg-white shadow-sm transition-colors hover:bg-gray-100 hover:text-gray-900 dark:border-gray-800 dark:bg-gray-950 dark:hover:bg-gray-950 dark:hover:text-gray-50'
+              to='/'
+            >
+              <PinIcon className='w-4 h-4' />
+              <span className='sr-only'>Pinterest</span>
             </Link>
           </div>
-        </div>
-
-        <div className=''>
-          <p className='font-semibold uppercase tracking-wide mb-2'>Categories</p>
-          <ul className='grid grid-cols-2 text-sm'>
-            <li>
-              <Link className='hover:underline' href='#'>
-                Electronics
-              </Link>
-            </li>
-            <li>
-              <Link className='hover:underline' href='#'>
-                Clothing
-              </Link>
-            </li>
-            <li>
-              <Link className='hover:underline' href='#'>
-                Home Decor
-              </Link>
-            </li>
-            <li>
-              <Link className='hover:underline' href='#'>
-                Accessories
-              </Link>
-            </li>
-          </ul>
-        </div>
-
-        <div
-          className='flex items-center gap-1 md:col-start-2 md:gap-4 lg:col-start-4 lg:items-center'
-        >
-          <Link
-            className='rounded-lg inline-flex w-8 h-8 items-center justify-center border border-gray-200 bg-white shadow-sm transition-colors hover:bg-gray-100 hover:text-gray-900 dark:border-gray-800 dark:bg-gray-950 dark:hover:bg-gray-950 dark:hover:text-gray-50'
-            to='/'
-          >
-            <FacebookIcon className='w-4 h-4' />
-            <span className='sr-only'>Facebook</span>
-          </Link>
-          <Link
-            className='rounded-lg inline-flex w-8 h-8 items-center justify-center border border-gray-200 bg-white shadow-sm transition-colors hover:bg-gray-100 hover:text-gray-900 dark:border-gray-800 dark:bg-gray-950 dark:hover:bg-gray-950 dark:hover:text-gray-50'
-            to='/'
-          >
-            <InstagramIcon className='w-4 h-4' />
-            <span className='sr-only'>Instagram</span>
-          </Link>
-          <Link
-            className='rounded-lg inline-flex w-8 h-8 items-center justify-center border border-gray-200 bg-white shadow-sm transition-colors hover:bg-gray-100 hover:text-gray-900 dark:border-gray-800 dark:bg-gray-950 dark:hover:bg-gray-950 dark:hover:text-gray-50'
-            to='/'
-          >
-            <TwitterIcon className='w-4 h-4' />
-            <span className='sr-only'>Twitter</span>
-          </Link>
-          <Link
-            className='rounded-lg inline-flex w-8 h-8 items-center justify-center border  border-gray-200 bg-white shadow-sm transition-colors hover:bg-gray-100 hover:text-gray-900 dark:border-gray-800 dark:bg-gray-950 dark:hover:bg-gray-950 dark:hover:text-gray-50'
-            to='/'
-          >
-            <PinIcon className='w-4 h-4' />
-            <span className='sr-only'>Pinterest</span>
-          </Link>
-        </div>
-        <div className='flex items-center justify-center'>
-          <span className='text-sm'>All right reserved</span>
+          <div className=' px-1 text-center items-center'>
+            <span className='text-[0.8rem] md:text-sm '>© 2024 Luis Mendoza All Rights Reserved</span>
+          </div>
         </div>
       </div>
     </footer>

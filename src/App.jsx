@@ -7,12 +7,14 @@ import Products from './pages/Products'
 import Product from './pages/Product'
 import Home from './pages/Home'
 import Header from './components/Header'
+import Footer from './components/Footer'
 
 const Layout = () => {
   return (
     <div>
       <Header />
       <Outlet />
+      <Footer />
     </div>
   )
 }
@@ -40,7 +42,7 @@ const router = createBrowserRouter([
 
 function App () {
   return (
-    <div className='w-screen h-screen overflow-x-hidden'>
+    <div className='overflow-x-hidden'>
       <RouterProvider router={router} />
     </div>
   )
