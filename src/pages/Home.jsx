@@ -70,23 +70,23 @@ function Home () {
         </div>
       </Carousel>
 
-      <div className=' grid grid-cols-2 gap-3 sm:gap-5 mt-5 content-cente mx-2'>
-        <Card className='flex items-center flex-col justify-evenly text-center h-[15rem] md:h-[20rem] w-[12rem] sm:w-[15rem] md:w-[18rem] lg:w-[25rem]'>
+      <div className=' grid grid-cols-2 gap-2 sm:gap-5 mt-5'>
+        <Card className='flex items-center flex-col text-center h-[12rem] sm:h-[15rem] md:h-[20rem] w-[11rem] sm:w-[15rem] md:w-[18rem] lg:w-[25rem] py-4'>
           <CardContent className='gap-10'>
-            <h2 className='text-sm md:text-xl font-semibold'>Deals in PCs</h2>
-            <Link className='h-24 w-24 md:h-36 md:w-36 lg:w-44 hover:scale-110 transition-all duration-200' to='/products'>
-              <img src='https://m.media-amazon.com/images/I/61svvSjuJ9L._AC_SY355_.jpg' alt='pc gamer' className='object-contain h-full w-full -mt-3' />
+            <h2 className='text-sm md:text-xl font-semibold h-[12%]'>Deals in PCs</h2>
+            <Link className='h-20 w-20 sm:h-24 sm:w-24 md:h-36 md:w-36 lg:w-44 hover:scale-110 transition-all duration-200' to='/products'>
+              <img src='https://m.media-amazon.com/images/I/61svvSjuJ9L._AC_SY355_.jpg' alt='pc gamer' className='object-contain h-full w-full -mt-4 sm:mt-2' />
               <span className='text-xs text-gray-500/70'>Shop Now</span>
             </Link>
           </CardContent>
         </Card>
-        <Card className='flex flex-col items-center justify-evenly text-center h-[15rem] md:h-[20rem] w-[12rem] sm:w-[15rem] md:w-[18rem] lg:w-[25rem]'>
-          <CardContent>
-            <h2 className='text-sm md:text-xl font-semibold'>Gaming Accesories</h2>
+        <Card className='flex flex-col items-center text-center h-[12rem] sm:h-[15rem] md:h-[20rem] w-[11rem] sm:w-[15rem] md:w-[18rem] lg:w-[25rem] py-4'>
+          <CardContent className='gap-3 sm:gap-6'>
+            <h2 className='text-sm md:text-xl font-semibold h-[12%]'>Accesories</h2>
             <div className='grid grid-cols-2 gap-7 md:gap-10'>
               {accesoriesCard.map((item) => {
                 return (
-                  <Link to='/products' className='h-12 w-14 md:h-20 md:w-20  hover:scale-110 transition-all duration-200' key={item.alt}>
+                  <Link to='/products' className='h-10 w-10 sm:h-12 sm:w-14 md:h-20 md:w-20  hover:scale-110 transition-all duration-200' key={item.alt}>
                     <img src={item.src} alt={item.alt} className='object-contain h-full w-full ' />
                     <span className='text-xs text-gray-500/70'>{item.name}</span>
                   </Link>
@@ -95,13 +95,13 @@ function Home () {
             </div>
           </CardContent>
         </Card>
-        <Card className='flex flex-col items-center justify-evenly text-center h-[15rem] md:h-[20rem] w-[12rem] sm:w-[15rem] md:w-[18rem] lg:w-[25rem]'>
-          <CardContent>
-            <h2 className='text-sm md:text-xl font-semibold'>Computer Hardware</h2>
-            <div className='grid grid-cols-2 gap-7 md:gap-10'>
+        <Card className='flex flex-col items-center text-center h-[12rem] sm:h-[15rem] md:h-[20rem] w-[11rem] sm:w-[15rem] md:w-[18rem] lg:w-[25rem] py-4'>
+          <CardContent className='gap-2 sm:gap-6'>
+            <h2 className='text-sm md:text-xl font-semibold h-[12%]'>Components</h2>
+            <div className='grid grid-cols-2 gap-7 md:gap-10 '>
               {hardwareCard.map((item) => {
                 return (
-                  <Link to='/products' className='h-12 w-14 md:h-20 md:w-20 hover:scale-110 transition-all duration-200' key={item.alt}>
+                  <Link to='/products' className='h-10 w-10 sm:h-12 sm:w-14 md:h-20 md:w-20 hover:scale-110 transition-all duration-200' key={item.alt}>
                     <img src={item.src} alt={item.alt} className='object-contain h-full w-full' />
                     <span className='text-xs text-gray-500/70'>{item.name}</span>
                   </Link>
@@ -110,11 +110,11 @@ function Home () {
             </div>
           </CardContent>
         </Card>
-        <Card className='flex flex-col items-center justify-evenly text-center h-[15rem] md:h-[20rem] w-[12rem] sm:w-[15rem] md:w-[18rem] lg:w-[25rem]'>
+        <Card className='flex flex-col items-center text-center h-[12rem] sm:h-[15rem] md:h-[20rem] w-[11rem] sm:w-[15rem] md:w-[18rem] lg:w-[25rem] py-4'>
           <CardContent className='gap-10'>
-            <h2 className='text-sm md:text-xl font-semibold'>Monitors</h2>
-            <Link className='h-24 md:h-36 md:w-36 lg:w-44 hover:scale-110 transition-all duration-200' to='/products'>
-              <img src='https://m.media-amazon.com/images/I/71EQFcsElOL._AC_UY218_.jpg' alt='pc gamer' className='object-contain h-full w-full -mt-3' />
+            <h2 className='text-sm md:text-xl font-semibold h-[12%]'>Monitors</h2>
+            <Link className='h-20 w-20 sm:h-24 sm:w-24 md:h-36 md:w-36 lg:w-44 hover:scale-110 transition-all duration-200' to='/products'>
+              <img src='https://m.media-amazon.com/images/I/71EQFcsElOL._AC_UY218_.jpg' alt='pc gamer' className='object-contain h-full w-full -mt-6 sm:mt-1' />
               <span className='text-xs text-gray-500/70'>Shop Now</span>
             </Link>
           </CardContent>

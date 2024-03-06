@@ -43,43 +43,46 @@ const links = [
 
 function SideMenu () {
   return (
-    <div className='border-r bg-gray-100 dark:bg-gray-800/40 absolute top-0 left-0 w-56 h-screen z-20 lg:hidden'>
-      <div className='flex flex-col gap-2'>
-        <div className='flex h-[60px] items-center justify-center border-b border-slate-600/50 py-20 mx-5'>
-          <Link className='flex items-center gap-2 font-semibold' to='/'>
-            <Package2Icon className='h-6 w-6' />
-            <span className=''>E-Commerce App</span>
-          </Link>
-        </div>
-        <div className=''>
-          <nav className='grid items-start px-4 text-sm font-medium border-b border-slate-600/50 mx-5 py-10 gap-2'>
-            {
-                links.slice(0, 3).map((link) => {
-                  return (
-                    <Link key={link.id} to={link.href} className='flex items-center gap-3 rounded-lg bg-gray-100 px-3 py-2 text-gray-500/60 transition-all hover:text-blue-800 dark:bg-gray-800 dark:text-gray-50 dark:hover:text-gray-50'>{link.icon}{link.name}</Link>
-                  )
-                })
-            }
-          </nav>
-          <nav className='grid items-start px-4 text-sm font-medium border-b border-slate-600/50 mx-5 py-10 gap-2'>
-            {
-                links.slice(3, 5).map((link) => {
-                  return (
-                    <Link key={link.id} to={link.href} className='flex items-center gap-3 rounded-lg bg-gray-100 px-3 py-2 text-gray-500/60 transition-all hover:text-blue-800 dark:bg-gray-800 dark:text-gray-50 dark:hover:text-gray-50'>{link.icon}{link.name}</Link>
-                  )
-                })
-            }
-          </nav>
-          <nav className='grid items-start px-4 text-sm font-medium mx-5 py-10 gap-2'>
-            {
-                links.slice(5, 6).map((link) => {
-                  return (
-                    <Link key={link.id} to={link.href} className='flex items-center gap-3 rounded-lg bg-gray-100 px-3 py-2 text-gray-500/60 transition-all hover:text-blue-800 dark:bg-gray-800 dark:text-gray-50 dark:hover:text-gray-50 '>{link.icon}{link.name}</Link>
-                  )
-                })
-            }
-          </nav>
+    <div className='fixed w-full h-full bg-slate-800/80 z-20 top-0'>
 
+      <div className='border-r bg-gray-100 dark:bg-gray-800/40 absolute top-0 left-0 w-52 md:w-72 h-screen z-20 lg:hidden'>
+        <div className='flex flex-col gap-2'>
+          <div className='flex h-[60px] items-center justify-center border-b border-slate-600/50 py-20 mx-5'>
+            <Link className='flex items-center gap-2 font-semibold' to='/'>
+              <Package2Icon className='h-6 w-6' />
+              <span className=''>E-Commerce App</span>
+            </Link>
+          </div>
+          <div className=''>
+            <nav className='grid items-start px-4 text-sm font-medium border-b border-slate-600/50 mx-5 py-10 gap-2'>
+              {
+              links.slice(0, 3).map((link) => {
+                return (
+                  <Link key={link.id} to={link.href} className='flex items-center gap-3 rounded-lg bg-gray-100 px-3 py-2 text-gray-500/60 transition-all hover:text-blue-800 dark:bg-gray-800 dark:text-gray-50 dark:hover:text-gray-50'>{link.icon}{link.name}</Link>
+                )
+              })
+              }
+            </nav>
+            <nav className='grid items-start px-4 text-sm font-medium border-b border-slate-600/50 mx-5 py-10 gap-2'>
+              {
+              links.slice(3, 5).map((link) => {
+                return (
+                  <Link key={link.id} to={link.href} className='flex items-center gap-3 rounded-lg bg-gray-100 px-3 py-2 text-gray-500/60 transition-all hover:text-blue-800 dark:bg-gray-800 dark:text-gray-50 dark:hover:text-gray-50'>{link.icon}{link.name}</Link>
+                )
+              })
+              }
+            </nav>
+            <nav className='grid items-start px-4 text-sm font-medium mx-5 py-10 gap-2'>
+              {
+              links.slice(5, 6).map((link) => {
+                return (
+                  <Link key={link.id} to={link.href} className='flex items-center gap-3 rounded-lg bg-gray-100 px-3 py-2 text-gray-500/60 transition-all hover:text-blue-800 dark:bg-gray-800 dark:text-gray-50 dark:hover:text-gray-50 '>{link.icon}{link.name}</Link>
+                )
+              })
+              }
+            </nav>
+
+          </div>
         </div>
       </div>
     </div>

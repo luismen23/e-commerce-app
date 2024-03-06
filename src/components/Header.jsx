@@ -22,7 +22,7 @@ function Header () {
           <div className='flex lg:hidden'>
             {
               showMenu
-                ? <button onClick={handleClick}><XMarkIcon className='h-6 w-6 relative z-30' /></button>
+                ? <button onClick={handleClick}><XMarkIcon className='h-6 w-6 z-30 fixed' /></button>
                 : <button onClick={handleClick}><Bars3Icon className='h-6 w-6 relative z-30' /></button>
           }
           </div>

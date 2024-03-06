@@ -6,10 +6,10 @@ function Footer () {
   return (
     <footer className='w-full py-4 bg-gray-100 flex'>
       <div
-        className='flex flex-col gap-3  text-sm text-gray-500 md:text-base md:px-6 dark:text-gray-400 w-full lg:gap-y-10'
+        className='flex flex-col gap-3 text-sm text-gray-500 md:text-base md:px-6 dark:text-gray-400 w-full lg:gap-y-10'
       >
 
-        <div className='flex w-full justify-evenly max-w-[22rem] md:max-w-[40rem] lg:max-w-[60rem] mx-auto gap-x-14 lg:gap-x-20'>
+        <div className='flex w-full justify-evenly px-2 md:mx-auto md:max-w-[40rem] lg:max-w-[60rem] gap-x-5 sm:gap-x-14 lg:gap-x-20'>
           <div className='hidden md:block'>
             <p className='font-semibold uppercase tracking-wide mb-1'>About Us</p>
             <p className='text-sm text-justify'>
@@ -22,12 +22,12 @@ function Footer () {
             <p className='font-semibold uppercase tracking-wide mb-1'>Contact Us</p>
             <div className='flex items-center gap-2 text-sm'>
               <PhoneIcon className='w-4 h-4 flex-shrink-0' />
-              <span>1-800-123-4567</span>
+              <span>+58-412-7280523</span>
             </div>
             <div className='flex items-center gap-2'>
               <EnvelopeIcon className='w-4 h-4 flex-shrink-0 text-sm' />
               <Link className='underline' href='#'>
-                info@example.com
+                luismendoza1701@gmail.com
               </Link>
             </div>
           </div>
@@ -42,17 +42,17 @@ function Footer () {
               </li>
               <li>
                 <Link className='hover:underline' href='#'>
-                  Desktop
-                </Link>
-              </li>
-              <li>
-                <Link className='hover:underline' href='#'>
-                  Laptos
+                  Monitors
                 </Link>
               </li>
               <li>
                 <Link className='hover:underline' href='#'>
                   Accessories
+                </Link>
+              </li>
+              <li>
+                <Link className='hover:underline' href='#'>
+                  Laptops
                 </Link>
               </li>
             </ul>
