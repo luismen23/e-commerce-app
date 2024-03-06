@@ -6,12 +6,12 @@ function Footer () {
   return (
     <footer className='w-full py-4 bg-gray-100 flex'>
       <div
-        className='flex flex-col gap-3 text-sm text-gray-500 md:text-base md:px-6 dark:text-gray-400 w-full lg:gap-y-10'
+        className='flex flex-col gap-3  text-sm text-gray-500 md:text-base md:px-6 dark:text-gray-400 w-full lg:gap-y-10'
       >
 
-        <div className='flex w-full justify-evenly max-w-[20rem] md:max-w-[40rem] lg:max-w-[60rem] mx-auto gap-x-10 lg:gap-x-20'>
+        <div className='flex w-full justify-evenly max-w-[22rem] md:max-w-[40rem] lg:max-w-[60rem] mx-auto gap-x-14 lg:gap-x-20'>
           <div className='hidden md:block'>
-            <p className='font-semibold uppercase tracking-wide mb-2'>About Us</p>
+            <p className='font-semibold uppercase tracking-wide mb-1'>About Us</p>
             <p className='text-sm text-justify'>
               Your one-stop shop for the best products. We are dedicated to providing high-quality items with excellent
               service.
@@ -19,7 +19,7 @@ function Footer () {
           </div>
 
           <div className=''>
-            <p className='font-semibold uppercase tracking-wide mb-2'>Contact Us</p>
+            <p className='font-semibold uppercase tracking-wide mb-1'>Contact Us</p>
             <div className='flex items-center gap-2 text-sm'>
               <PhoneIcon className='w-4 h-4 flex-shrink-0' />
               <span>1-800-123-4567</span>
@@ -33,7 +33,7 @@ function Footer () {
           </div>
 
           <div className=''>
-            <p className='font-semibold uppercase tracking-wide mb-2'>Categories</p>
+            <p className='font-semibold uppercase tracking-wide mb-1'>Categories</p>
             <ul className='text-sm grid grid-cols-2 gap-x-5 sm:gap-x-10'>
               <li>
                 <Link className='hover:underline' href='#'>
@@ -59,7 +59,7 @@ function Footer () {
           </div>
         </div>
 
-        <div className='flex w-full justify-evenly gap-8 max-w-[20rem] md:max-w-[40rem] mx-auto'>
+        <div className='flex w-full justify-evenly gap-8 max-w-[22rem] md:max-w-[40rem] mx-auto'>
           <div
             className='flex items-center gap-1 md:gap-4 '
           >
